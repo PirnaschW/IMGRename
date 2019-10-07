@@ -6,7 +6,7 @@ namespace Tools
 
   std::wstring PickDirectory(const std::wstring& path)
   {
-    std::wstring Result{};
+    std::wstring Result{path};
 
     HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
     if (SUCCEEDED(hr))

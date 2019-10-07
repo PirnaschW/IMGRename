@@ -63,9 +63,9 @@ CIMGRenameDlg::CIMGRenameDlg(CWnd* pParent /*=NULL*/)
   std::wstring regval{};
   regval = Reg::GetString(HKEY_CURRENT_USER, CIMGRenameApp::AppName, L"Path", L"C:\\");
   m_path = regval.c_str();
-  regval = Reg::GetString(HKEY_CURRENT_USER, CIMGRenameApp::AppName, L"From", L"C:\\");
+  regval = Reg::GetString(HKEY_CURRENT_USER, CIMGRenameApp::AppName, L"From", L"IMG_");
   m_from = regval.c_str();
-  regval = Reg::GetString(HKEY_CURRENT_USER, CIMGRenameApp::AppName, L"To", L"C:\\");
+  regval = Reg::GetString(HKEY_CURRENT_USER, CIMGRenameApp::AppName, L"To", L"6D-04");
   m_replace = regval.c_str();
   m_subdir = Reg::GetInt(HKEY_CURRENT_USER, CIMGRenameApp::AppName, L"SubDirs", 0);
 }
