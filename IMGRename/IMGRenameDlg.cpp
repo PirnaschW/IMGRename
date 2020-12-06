@@ -209,11 +209,13 @@ void CIMGRenameDlg::ProcessFiles(std::wstring path)
   BOOL more = (h != INVALID_HANDLE_VALUE);
   while (more)
   {
-    CString Path = path.c_str();
-    CString OldName = Path + L"\\" + data.cFileName;
-    CString NewName = Path + L"\\" + m_replace + (data.cFileName + wcslen(m_from.GetString()));
-    CFile::Rename(OldName, NewName);
-
+		if ((data.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY) == 0)
+		{
+			CString Path = path.c_str();
+			CString OldName = Path + L"\\" + data.cFileName;
+			CString NewName = Path + L"\\" + m_replace + (data.cFileName + wcslen(m_from.GetString()));
+			CFile::Rename(OldName, NewName);
+		}
     more = FindNextFile(h, &data);
   };
   ::FindClose(h);

@@ -87,8 +87,8 @@ CAPTION "About IMGRename"
 FONT 8, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
-    LTEXT           "IMGRename, Version 1.2",IDC_STATIC,42,14,114,8,SS_NOPREFIX
-    LTEXT           "Copyright © 2013-2019 W. Pirnasch",IDC_STATIC,42,26,114,8
+    LTEXT           "IMGRename, Version 1.3",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2013-2020 W. Pirnasch",IDC_STATIC,42,26,114,8
     DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
 END
 
@@ -117,8 +117,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,2,0,1
- PRODUCTVERSION 1,2,0,1
+ FILEVERSION 1,3,0,0
+ PRODUCTVERSION 1,3,0,0
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -135,12 +135,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "W. Pirnasch"
             VALUE "FileDescription", "IMGRename"
-            VALUE "FileVersion", "1.2.0.1"
+            VALUE "FileVersion", "1.3.0.0"
             VALUE "InternalName", "IMGRename.exe"
-            VALUE "LegalCopyright", "(c) W. Pirnasch 2019.  All rights reserved."
+            VALUE "LegalCopyright", "(c) W. Pirnasch 2013 - 2020.  All rights reserved."
             VALUE "OriginalFilename", "IMGRename.exe"
-            VALUE "ProductName", "IMGRename Application 1.2 (2019-10-07)"
-            VALUE "ProductVersion", "1.2.0.1"
+            VALUE "ProductName", "IMGRename Application 1.3 (2020-12-06)"
+            VALUE "ProductVersion", "1.3.0.0"
         END
     END
     BLOCK "VarFileInfo"
